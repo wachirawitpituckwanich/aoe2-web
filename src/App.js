@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Carditem from './components/card'
+import Searchbar from './components/Searchbar'
 import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+      <h1>AOE2 Civilization data</h1>
+      </div>
+      <Searchbar/>
+      <div className="card-ctn">
+      <Carditem/>
+      </div>        
     </div>
   );
 }
