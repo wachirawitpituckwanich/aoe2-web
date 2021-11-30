@@ -1,13 +1,16 @@
-.card {
-    display:flex;
-    flex-direction: column;
-    padding: 1px;
-}
 .card-img {
     width: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 21%;
+    padding-left: 10px;
 }
 .card-img img{
     padding: 10px;
     width: 100px;
     height: 100px;
+}
+.name{
+    padding-left: 15px;
 }

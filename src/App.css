@@ -10,13 +10,7 @@ body {
   background: #E0C9A6;
 }
 
-.card-ctn {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 25px;
-}
+
 .header {
   padding: 10px
 }

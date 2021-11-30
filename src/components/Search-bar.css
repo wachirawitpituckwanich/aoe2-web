@@ -5,7 +5,13 @@
   margin-top: 105px;
   display: flex;
 }
-
+.card-ctn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 25px;
+}
 .search input {
   background-color: white;
   border: 0;

@@ -1,14 +1,32 @@
-import React from 'react'
-import './Search-bar.css'
-
+import React, { useState, useEffect } from "react";
+import "./Search-bar.css";
+import axios from "axios";
+import Carditem from "./card";
 const Searchbar = () => {
-    return(
-        <div className="search">
-            <div class="searchInput">
-                <input type="text"/>
-            </div>
-        </div>
-    )
-}
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('')
+  useEffect(() => {
+    const loadData = async () => {
+      setLoading(true);
+      const response = await axios.get(
+        "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations"
+      );
+      setData(response.data.civilizations);
+      setLoading(false);
+    };
+    loadData();
+  }, []);
+  return (
+    <div className="search">
+      <div className="searchInput">
+        <input type="text" placeholder="Search your favorite civ!"onChange={event => {setSearchTerm(event.target.value)}} />
+      </div>
+      <div className="card-ctn">
+            <Carditem loading={loading} data={data} searchTerm={searchTerm}/>        
+      </div>
+    </div>
+  );
+};
 
 export default Searchbar;

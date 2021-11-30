@@ -7,10 +7,7 @@ function App() {
       <div className="header">
       <h1>AOE2 Civilization data</h1>
       </div>
-      <Searchbar/>
-      <div className="card-ctn">
-      <Carditem/>
-      </div>        
+      <Searchbar/>    
     </div>
   );
 }
