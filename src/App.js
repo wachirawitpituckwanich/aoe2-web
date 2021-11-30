@@ -1,7 +1,6 @@
-import Carditem from './components/card'
 import Searchbar from './components/Searchbar'
 import './App.css';
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className="header">
