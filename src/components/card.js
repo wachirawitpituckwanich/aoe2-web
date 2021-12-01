@@ -1,6 +1,6 @@
 import React from 'react'
 import './card.css'
-import { Link, BrowserRouter as Router, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Carditem = ({loading,data,searchTerm}) => {
     return(
             <div className="card-img">

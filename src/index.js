@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import CivDetails from './components/civdetails';
 import reportWebVitals from './reportWebVitals';
-import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 ReactDOM.render(
   <Router>
     <Switch>

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10px;
 }
 .civImage{
     display: flex;
@@ -15,7 +16,20 @@
     justify-content: center;
     text-align: center;
 }
+.civDetails li {
+    text-align: left;
+}
+.civDetails h2{
+    padding: 5px;
+}
 .civImage img{
     width: 100px;
     height: 100px;
+}
+.list-ctn{
+    width: 300px;
+    align-self: center;
+}
+.civBonus p{
+    text-align: left;
 }
