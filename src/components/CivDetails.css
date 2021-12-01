@@ -1,0 +1,21 @@
+.main-detail-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.civImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+}
+.civDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.civImage img{
+    width: 100px;
+    height: 100px;
+}

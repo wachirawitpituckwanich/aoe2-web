@@ -12,7 +12,10 @@ const Searchbar = () => {
       const response = await axios.get(
         "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations"
       );
-      setData(response.data.civilizations);
+      const res = response.data.civilizations
+      // remove duplicates from response
+      const result = res.filter((arr, index, self) => index === self.findIndex((t) => (t.name === arr.name)))
+      setData(result);
       setLoading(false);
     };
     loadData();

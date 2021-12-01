@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import CivDetails from './components/civdetails';
 import reportWebVitals from './reportWebVitals';
-
+import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route exact path="/" component={App}/>
+      <Route path="/:name" component={CivDetails}/>
+    </Switch>
+  </Router>
+  ,
   document.getElementById('root')
 );
 
