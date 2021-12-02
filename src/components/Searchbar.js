@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Search-bar.css";
+import "../assets/css/Search-bar.css";
 import axios from "axios";
 import Carditem from "./card";
 const Searchbar = () => {

@@ -11,7 +11,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={App}/>
       <Route path="/:name" component={CivDetails}/>
-      <Route path="*" component={Error}>
+      <Route component={Error}>
         <Error/>
       </Route>
     </Switch>

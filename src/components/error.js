@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from "react-lottie-player";
 import error from '../assets/animations/80698-404-error.json'
-import './anim.css'
+import '../assets/css/anim.css'
 const Error = () => {
     return(
         <div className="animCtn">

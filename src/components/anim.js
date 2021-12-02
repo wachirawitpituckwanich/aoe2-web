@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie-player";
 import cube from "../assets/animations/87474-duo-cubes-loader-2.json";
-import './anim.css'
+import '../assets/css/anim.css';
 const Animation = () => {
   return (
     <div className="animCtn">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FadeIn from 'react-fade-in';
 import Animation from './anim'
-import "./CivDetails.css";
+import "../assets/css/CivDetails.css";
 import axios from "axios";
 import ReturnBtn from "./returnBtn";
 const CivDetails = ({ match }) => {

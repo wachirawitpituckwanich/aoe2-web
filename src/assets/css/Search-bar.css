@@ -23,3 +23,24 @@
   height: 30px;
   width: 300px;
 }
+@media screen and (min-width: 1366px) and (max-width: 1366px){
+  .card-ctn{
+      padding-left: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 768px){
+  .card-ctn{
+      padding-left: 25px;
+  }
+}
+@media screen and (max-width: 375px){
+  .card-ctn{
+      padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .card-ctn{
+    padding-left: 0px;
+}
+}
