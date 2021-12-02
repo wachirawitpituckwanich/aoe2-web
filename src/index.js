@@ -5,11 +5,15 @@ import App from './App';
 import CivDetails from './components/civdetails';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Error from './components/error'
 ReactDOM.render(
   <Router>
     <Switch>
       <Route exact path="/" component={App}/>
       <Route path="/:name" component={CivDetails}/>
+      <Route path="*" component={Error}>
+        <Error/>
+      </Route>
     </Switch>
   </Router>
   ,

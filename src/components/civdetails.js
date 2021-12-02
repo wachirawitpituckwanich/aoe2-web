@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import FadeIn from 'react-fade-in';
+import Animation from './anim'
 import "./CivDetails.css";
 import axios from "axios";
 import ReturnBtn from "./returnBtn";
 const CivDetails = ({ match }) => {
-  const civName = match.params.name;
+  const civName = match.params.name
   const [armyType, setArmyType] = useState([]);
   const [loading, setLoading] = useState(false);
   const [teamBonus, setTeamBonus] = useState('');
@@ -27,12 +29,16 @@ const CivDetails = ({ match }) => {
       let civUU = [];
       let promisesUU = [];
       for(let i = 0; i < civData[0].unique_unit.length; i++) {
-        promisesUU.push(
-          axios.get(civData[0].unique_unit[i]).then(resp =>{
-            let unitName = resp.data.name;
-            civUU.push(unitName)
-          })
-        )
+        if(civData[0].unique_unit.length == 0){
+          civUU.push('No data')
+        } else {
+          promisesUU.push(
+            axios.get(civData[0].unique_unit[i]).then(resp =>{
+              let unitName = resp.data.name;
+              civUU.push(unitName)
+            })
+          )
+        }
       }
       let civUT = [];
       let promisesUT = [];
@@ -58,10 +64,12 @@ const CivDetails = ({ match }) => {
     loadData();
   }, [civName]);
   return (
-    <div>
+    <FadeIn>
+    <div className="dataCtn">
       {loading ? (
-        <h1>Loading</h1>
+        <Animation/>
       ) : (
+        <FadeIn>
         <div className="main-detail-ctn">
           <ReturnBtn/>
           <div className="civImage">
@@ -73,33 +81,35 @@ const CivDetails = ({ match }) => {
             />
           </div>
           <div className="civDetails">
-            <h1>{civName}</h1>
+            <h1 className="civName">{civName}</h1>
             <h2>Army type</h2>
             <p>{armyType}</p>
             <h2>Unique unit</h2>
             <div className="list-ctn">
-              {uniqueUnitName.map((data) =>{
+              {uniqueUnitName == "" ? ('No data') : (uniqueUnitName.map((data) =>{
                 return <p>{data}</p>
-              })} 
+              }))} 
             </div>
             <h2>Unique tech</h2>
-            {uniqueTech.map((data) =>{
+            {uniqueTech == "" ? ('No data') : (uniqueTech.map((data) =>{
                 return <p>{data}</p>
-              })} 
+              }))}
             <h2>Team bonus</h2>
             <p>{teamBonus}</p>
             <h2>Civilization bonus</h2>
             <div className="list-ctn">
               <ul>
               {civBonus.map((data) =>{
-                return <li>{data}</li>
+                return <li key={data.id}>{data}</li>
               })} 
               </ul>
             </div>
           </div>
         </div>
+        </FadeIn>
       )}
     </div>
+    </FadeIn>
   );
 };
 export default CivDetails;
