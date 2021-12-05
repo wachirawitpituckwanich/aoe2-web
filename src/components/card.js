@@ -1,11 +1,12 @@
 import React from 'react'
-import './card.css'
+import '../assets/css/card.css'
 import { Link } from 'react-router-dom';
+import Animation from './anim'
 const Carditem = ({loading,data,searchTerm}) => {
     return(
             <div className="card-img">
             {loading ? (
-          <h1>Loading..</h1>
+          <Animation/>
         ) : (
             // load local image dynamically
           data.filter((data) => {
