@@ -7,4 +7,10 @@ module.export = function(app) {
       changeOrigin: true
     })
   )
+  app.use(
+    proxy("/tech", {
+      target: 'https://age-of-empires-2-api.herokuapp.com/api/v1/technology',
+      changeOrigin: true
+    })
+  )
 }
