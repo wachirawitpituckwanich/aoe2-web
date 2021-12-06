@@ -16,7 +16,7 @@ const CivDetails = ({ match }) => {
     const loadData = async () => {
       setLoading(true);
       const response = await axios.get(
-        "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations"
+        "https://aoe2web-server.herokuapp.com/"
       );
       const res = response.data.civilizations
       // remove duplicates from response
