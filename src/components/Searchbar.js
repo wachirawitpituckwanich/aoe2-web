@@ -13,9 +13,10 @@ const Searchbar = () => {
         "/civilizations"
       );
       const res = response.data.civilizations
+      console.log(res);
       // remove duplicates from response
-      const result = res.filter((arr, index, self) => index === self.findIndex((t) => (t.name === arr.name)))
-      setData(result);
+      //const result = res.filter((arr, index, self) => index === self.findIndex((t) => (t.name === arr.name)))
+      setData(res);
       setLoading(false);
     };
     loadData();
