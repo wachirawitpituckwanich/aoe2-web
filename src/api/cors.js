@@ -1,12 +1,10 @@
-import micro from "micro-cors";
+const proxy = require('http-proxy-middleware')
 
-function MyApi(req, res) {
-  if (req.method === "OPTIONS") {
-    return res.status(200).end();
-  }
-  
+module.export = function(app) {
+  app.use(
+    proxy("/civ", {
+      target: 'https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations',
+      changeOrigin: true
+    })
+  )
 }
-
-const cors = micro();
-
-export default cors(MyApi);

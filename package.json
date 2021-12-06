@@ -2,6 +2,7 @@
   "name": "aoe2-web",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://age-of-empires-2-api.herokuapp.com/api/v1",
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
@@ -13,6 +14,7 @@
     "axios": "^0.24.0",
     "axios-hooks": "^3.0.0",
     "cors": "^2.8.5",
+    "http-proxy-middleware": "^2.0.1",
     "micro-cors": "^0.1.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -27,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node src/api/cors.js"
   },
   "eslintConfig": {
     "extends": [
