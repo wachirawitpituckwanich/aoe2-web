@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "https://age-of-empires-2-api.herokuapp.com/api/v1",
-  "homepage": "https://wachirawitpituckwanich.github.io/aoe2-web/",
+  "homepage": "./",
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
