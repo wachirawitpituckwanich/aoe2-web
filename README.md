@@ -9,7 +9,7 @@ aoe2-web is a static site aims to provide data about Age of Empires 2 civilizati
 
 This application is not affiliated with Age of Empires II©. all informations and materials are belong to it's original owners.
 
-# Tools & Resources used 👩🏻‍💻
+# Tools & Resources used 💻
 
 API - [AoE2 API](https://age-of-empires-2-api.herokuapp.com/docs/)
 <br/>
