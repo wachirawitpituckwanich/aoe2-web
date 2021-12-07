@@ -34,11 +34,11 @@ Typing on the search bar will filter civilization and display civilization accor
 
 Upon clicking civilization banner, the website will redirect to civilization details, displaying army type, team bonus, and civilization bonus.
 
-![CivDetails](/images/civdetails.png?raw=true)
+![CivDetails](/images/civdetail.png?raw=true)
 
 Clicking back will return to the homepage.
 
-![Homepage](/images/homepage.png?raw=true)
+![Homepage](/images/mainpage.png?raw=true)
 
 # Local installation 📁
 
