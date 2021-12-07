@@ -15,5 +15,11 @@
 a {
     text-decoration: none;
     color: white;
+    transition: transform 0.25s ease;
 }
 
+a:hover{
+    transform: scale(1.1) translateZ(0);
+    backface-visibility: hidden;
+    z-index: 2;
+}

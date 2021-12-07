@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+<h1 align="center"> ⚔️ Age of Empires 2 civilization data ⚔️ </h1>
+<h3 align="center">🛡 Cool website describing Age of Empires 2 civilization 🛡</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About 📝
 
-## Available Scripts
+aoe2-web is a static site aims to provide data about Age of Empires 2 civilization.
 
-In the project directory, you can run:
+# Disclaimer 📌
 
-### `npm start`
+This application is not affiliated with Age of Empires II©. all informations and materials are belong to it's original owners.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Tools & Resources used 👩🏻‍💻
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+API - [AoE2 API](https://age-of-empires-2-api.herokuapp.com/docs/)
+<br/>
+Hosting platform - [Vercel](https://vercel.com/docs)
+<br/>
+Proxy server hosting platform - [Heroku](https://dashboard.heroku.com/)
+<br/>
+Icons & Button - [Material UI](https://mui.com/components/material-icons/)
+<br/>
 
-### `npm test`
+Develop on ReactJS with CSS3 and HTML5
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Features 🌌
 
-### `npm run build`
+Upon Hovering on the civilization banner, the banner will increase its size. indicating that it is being hovered over.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Hover](/images/hover.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Typing on the search bar will filter civilization and display civilization according to the search term.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Search](/images/search.png?raw=true)
 
-### `npm run eject`
+Upon clicking civilization banner, the website will redirect to civilization details, displaying army type, team bonus, and civilization bonus.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![CivDetails](/images/civdetails.png?raw=true)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clicking back will return to the homepage.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Homepage](/images/homepage.png?raw=true)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Local installation 📁
 
-## Learn More
+Use Node.js package manager [npm](https://nodejs.org/en/) to install modules needed for the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+```
+Run the project locally via npm or [yarn](https://yarnpkg.com/)
+```bash
+npm start
+// or
+yarn start
+```

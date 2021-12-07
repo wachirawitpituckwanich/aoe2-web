@@ -1,9 +1,9 @@
 .search{
   padding-top: 10px;
 }
-.searchInputs {
-  margin-top: 105px;
+.searchInput {
   display: flex;
+  justify-content: center;
 }
 .card-ctn {
   display: flex;
@@ -23,6 +23,7 @@
   height: 30px;
   width: 300px;
 }
+
 @media screen and (min-width: 1366px) and (max-width: 1366px){
   .card-ctn{
       padding-left: 25px;
@@ -31,6 +32,16 @@
 @media screen and (min-width: 768px) and (max-width: 768px){
   .card-ctn{
       padding-left: 25px;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 410px){
+  .card-ctn{
+      padding-left: 40px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 380px){
+  .card-ctn{
+      padding-left: 30px;
   }
 }
 @media screen and (max-width: 375px){

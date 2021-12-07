@@ -1,16 +1,12 @@
-import React from 'react';
+import React from "react";
 import Lottie from "react-lottie-player";
-import error from '../assets/animations/80698-404-error.json'
-import '../assets/css/anim.css'
+import error from "../assets/animations/80698-404-error.json";
+import "../assets/css/anim.css";
 const Error = () => {
-    return(
-        <div className="animCtn">
-      <Lottie
-        animationData={error}
-        play
-        style={{ width: 300, height: 300}}
-      />
+  return (
+    <div className="animCtn">
+      <Lottie animationData={error} play style={{ width: 300, height: 300 }} />
     </div>
-    )
-}
+  );
+};
 export default Error;
