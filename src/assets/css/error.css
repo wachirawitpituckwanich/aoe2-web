@@ -1,0 +1,35 @@
+.anim-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main {
+  text-align: center;
+}
+@media screen and (min-width: 1366px) {
+  .anim-ctn {
+    width: 600px;
+    height: 600px;
+  }
+  .main h2{
+     font-size: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .anim-ctn {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 411px) and (max-width: 767px) {
+  .anim-ctn {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 410px) {
+  .anim-ctn {
+    width: 300px;
+    height: 300px;
+  }
+}

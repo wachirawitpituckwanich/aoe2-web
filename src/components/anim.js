@@ -4,7 +4,7 @@ import cube from "../assets/animations/87474-duo-cubes-loader-2.json";
 import "../assets/css/anim.css";
 const Animation = () => {
   return (
-    <div className="animCtn">
+    <div className="anim-ctn">
       <Lottie
         loop
         animationData={cube}
