@@ -15,8 +15,8 @@
     "axios": "^0.24.0",
     "axios-hooks": "^3.0.0",
     "cors": "^2.8.5",
-    "http-proxy-middleware": "^2.0.1",
     "gh-pages": "^3.2.3",
+    "http-proxy-middleware": "^2.0.1",
     "micro-cors": "^0.1.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node src/api/cors.js",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

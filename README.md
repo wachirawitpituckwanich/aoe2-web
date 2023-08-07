@@ -7,7 +7,9 @@ aoe2-web is a static site aims to provide data about Age of Empires 2 civilizati
 
 # Disclaimer 📌
 
-This application is not affiliated with Age of Empires II©. all informations and materials are belong to it's original owners.
+* This application is not affiliated with Age of Empires II©. all informations and materials are belong to it's original owners.
+
+* Due to ![a change in Heroku's Subscription plan](https://blog.heroku.com/next-chapter), the [Free AoE2 API](https://age-of-empires-2-api.herokuapp.com/docs/) has ceased its operation and therefore, the website will be unfunctional until any other eligible alternatives API exists.  
 
 # Tools & Resources used 💻
 
