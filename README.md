@@ -3,13 +3,13 @@
 
 # About 📝
 
-aoe2-web is a static site aims to provide data about Age of Empires 2 civilization.
+aoe2-web is a static site that provides data about Age of Empires 2 civilization.
 
 # Disclaimer 📌
 
-* This application is not affiliated with Age of Empires II©. all informations and materials are belong to it's original owners.
+* This application is not affiliated with Age of Empires II©. All information and materials belong to its original owners.
 
-* Due to ![a change in Heroku's Subscription plan](https://blog.heroku.com/next-chapter), the [Free AoE2 API](https://age-of-empires-2-api.herokuapp.com/docs/) has ceased its operation and therefore, the website will be unfunctional until any other eligible alternatives API exists.  
+* Due to [a change in Heroku's Subscription plan](https://blog.heroku.com/next-chapter), the [Free AoE2 API](https://age-of-empires-2-api.herokuapp.com/docs/) has ceased its operation and therefore, the website will be unfunctional until any other eligible alternatives API exists.  
 
 # Tools & Resources used 💻
 
@@ -34,7 +34,7 @@ Typing on the search bar will filter civilization and display civilization accor
 
 ![Search](/images/search.png?raw=true)
 
-Upon clicking civilization banner, the website will redirect to civilization details, displaying army type, team bonus, and civilization bonus.
+Upon clicking the civilization banner, the website will redirect to civilization details, displaying army type, team bonus, and civilization bonus.
 
 ![CivDetails](/images/civdetail.png?raw=true)
 
