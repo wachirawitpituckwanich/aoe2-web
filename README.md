@@ -9,7 +9,7 @@ aoe2-web is a static site that provides data about Age of Empires 2 civilization
 
 * This application is not affiliated with Age of Empires II©. All information and materials belong to its original owners.
 
-* Due to [a change in Heroku's Subscription plan](https://blog.heroku.com/next-chapter), the [Free AoE2 API](https://age-of-empires-2-api.herokuapp.com/docs/) has ceased its operation and therefore, the website will be unfunctional until any other eligible alternatives API exists.  
+* Due to [a change in Heroku's Subscription plan](https://blog.heroku.com/next-chapter), the [free AoE2 API](https://age-of-empires-2-api.herokuapp.com/docs/) has ceased its operation. As a result, the website will remain nonfunctional until an alternative eligible API becomes available.  
 
 # Tools & Resources used 💻
 
@@ -26,19 +26,16 @@ Develop on ReactJS with CSS3 and HTML5
 
 # Features 🌌
 
-Upon Hovering on the civilization banner, the banner will increase its size. indicating that it is being hovered over.
-
+Upon hovering over the civilization banner, the banner increases in size, indicating that it is being hovered over.
 ![Hover](/images/hover.png?raw=true)
 
-Typing on the search bar will filter civilization and display civilization according to the search term.
-
+Typing in the search bar filters civilizations and displays them according to the search term.
 ![Search](/images/search.png?raw=true)
 
-Upon clicking the civilization banner, the website will redirect to civilization details, displaying army type, team bonus, and civilization bonus.
-
+Upon clicking the civilization banner, the website redirects to the civilization details page, displaying the army type, team bonus, and civilization bonus.
 ![CivDetails](/images/civdetail.png?raw=true)
 
-Clicking back will return to the homepage.
+Clicking 'Back' will return the user to the homepage.
 
 ![Homepage](/images/mainpage.png?raw=true)
 
